@@ -84,7 +84,7 @@ function userHTML(user) {
     return li;
 }
 
-// format time
+// change from 24 hour time to 12 hour time
 function formatAMPM(date) {
   var hours = date.getHours();
   var minutes = date.getMinutes();
