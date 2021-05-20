@@ -40,7 +40,7 @@ io.on('connection', (socket) => {
         io.to(user.room).emit('message', formatMessage(user.username, message));
     });
 
-    // Emit when clienr disconnects
+    // Emit when client disconnects
     socket.on('disconnect', () => {
         const user = userLeave(socket.id);
 
